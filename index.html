@@ -1,0 +1,97 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .score {
+        position: absolute;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        margin: 1%;
+        user-select: none;
+    }
+
+    .score h1 {
+        margin-top: 4rem;
+        color: red;
+        width: 100vw;
+        text-align: center;
+        display: none;
+    }
+
+    span {
+        color: aqua;
+    }
+
+    .container {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        inset: 0;
+    }
+
+    .wrapper {
+        background-color: white;
+        width: 50%;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .wrapper h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        color: blue;
+    }
+
+    .wrapper p {
+        font-size: 1.5rem;
+        color: gray;
+        padding: 0.5rem 0;
+    }
+
+    .wrapper button {
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+        width: 100%;
+        background-color: blue;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.2s all;
+    }
+
+    .wrapper button:hover {
+        background-color: cyan;
+        margin-top: -5px;
+    }
+</style>
+
+<div class="score">
+    SCORE : <span id="scoreEL">0</span>
+    <h1 id="alert">MADA KONO SEKAIWA!!!</h1>
+</div>
+
+<div class="container" id="popUp">
+    <div class="wrapper">
+        <h1 id="scoreEL2">0</h1>
+        <p>Points</p>
+        <button id="startBtn">Start Game</button>
+    </div>
+</div>
+
+<canvas></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="script.js"></script>
