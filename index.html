@@ -6,6 +6,9 @@
 
     body {
         background-color: black;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
     }
 
     .score {
@@ -75,20 +78,23 @@
     }
 </style>
 
-<div class="score">
-    SCORE : <span id="scoreEL">0</span>
-    <h1 id="alert">MADA KONO SEKAIWA!!!</h1>
-</div>
+<body>
 
-<div class="container" id="popUp">
-    <div class="wrapper">
-        <h1 id="scoreEL2">0</h1>
-        <p>Points</p>
-        <button id="startBtn">Start Game</button>
+    <div class="score">
+        SCORE : <span id="scoreEL">0</span>
     </div>
-</div>
 
-<canvas></canvas>
+    <div class="container" id="popUp">
+        <div class="wrapper">
+            <h1 id="scoreEL2">0</h1>
+            <p>Points</p>
+            <button id="startBtn">Start Game</button>
+        </div>
+    </div>
+
+    <canvas></canvas>
+
+</body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
